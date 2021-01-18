@@ -1,5 +1,5 @@
 const name = 'guangfa';
 
 function test(){
-    console.log(name)
+    console.log(this.name)
 }

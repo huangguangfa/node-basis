@@ -5,7 +5,7 @@
 // R_OK	表明调用进程可以读取文件。
 // W_OK	表明调用进程可以写入文件。
 // X_OK	表明调用进程可以执行文件。 在 Windows 上无效（表现得像 fs.constants.F_OK）
-const fs = require('fs').promises;
+const fs = require('fs');
 
 fs.access(__dirname + '/fs.demo1.js').then( res =>{
     if(res === undefined){
